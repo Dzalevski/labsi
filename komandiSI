@@ -1,0 +1,39 @@
+git init
+git add readme.md
+git commit -m "initial commit"
+git remote add origin https://github.com/Dzalevski/labsi
+git push origin master
+
+
+-Username
+-pw
+
+
+git branch bugFix1
+git branch bugFix2
+git  checkout bugFix1
+git commit -m "printName implemented"
+git push origin bugFix1
+
+git checkout bugFix2
+git add  -A
+git commit -m  "indexPrint imeplemented"
+
+git push origin bugFix2
+
+
+git checkout master
+git merge bugFix1
+git merge bugFix2
+git push origin master
+
+
+git branch mainimplementation
+git checkout mainimplementation
+git commit -m  "Main implemented"
+git push origin mainimplementation
+
+git checkout master
+
+git merge mainimplementation
+git push origin master
